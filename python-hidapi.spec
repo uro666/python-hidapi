@@ -34,7 +34,7 @@ export LDFLAGS="%{optflags}"
 %py3_install
 
 %check
-pytest tests.py
+pytest ./tests.py
 
 %files
 %license LICENSE*.txt
