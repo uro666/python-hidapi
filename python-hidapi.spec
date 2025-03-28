@@ -21,15 +21,15 @@ BuildRequires:	pkgconfig(udev)
 # for tests
 BuildRequires:	python%{pyver}dist(anyio)
 BuildRequires:	python%{pyver}dist(hypothesis)
-BuildRequires:	python%{pyver}dist(pluggy)
 BuildRequires:	python%{pyver}dist(pytest)
+BuildRequires:	python%{pyver}dist(pluggy)
 BuildRequires:	python%{pyver}dist(pytest-asyncio)
-BuildRequires:	python%{pyver}dist(pytest-randomly)
+#BuildRequires:	python%{pyver}dist(pytest-cov)
 BuildRequires:	python%{pyver}dist(pytest-forked)
-BuildRequires:	python%{pyver}dist(pytest-xdist)
 BuildRequires:	python%{pyver}dist(pytest-flake8)
 BuildRequires:	python%{pyver}dist(pytest-mock)
-BuildRequires:	python%{pyver}dist(pytest-cov)
+BuildRequires:	python%{pyver}dist(pytest-randomly)
+#BuildRequires:	python%{pyver}dist(pytest-xdist)
 
 %description
 A Cython interface to the hidapi from https://github.com/libusb/hidapi
